@@ -1,0 +1,77 @@
+/* Base Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #80deea); /* Light blue gradient */
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Title Styling */
+  h1 {
+    font-size: 2.5rem;
+    color: #00796b; /* Teal color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+  }
+  
+  /* Choice Buttons */
+  .choice-button {
+    height: 100px;
+    width: 100px;
+    border: none;
+    margin: 15px;
+    background: linear-gradient(135deg, #a5d6a7, #66bb6a); /* Green gradient */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .choice-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .choice-image {
+    height: 75px;
+    width: 75px;
+    transition: transform 0.3s ease;
+  }
+  
+  .choice-button:hover .choice-image {
+    transform: scale(1.2);
+  }
+  
+  /* Reset Button */
+  button[onclick*="resetScore"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: #00796b; /* Teal color */
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  button[onclick*="resetScore"]:hover {
+    background: #004d40; /* Darker teal */
+    transform: scale(1.1);
+  }
+  
+  button[onclick*="resetScore"]:active {
+    transform: scale(1.05);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Score and Result Styling */
+  h3 {
+    font-size: 1.2rem;
+    color: #004d40; /* Dark teal */
+    margin: 10px 0;
+  }
+  
